@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HV-CTFs</title>
+        <style>
+            *{
+                background: black;
+                color: rgb(68, 185, 0);
+            }
+            #header{
+                border-bottom: 0.3rem solid green;
+                display: flex;
+                gap: 35%;
+            }
+            #header #mainLogo{
+                margin-left: 1rem;
+            }
+            #header #mainLogo a{
+                text-decoration: none;
+            }
+            #header #navEle{
+                right: 2rem;
+                font-size: 1.1rem;
+                margin-top: 1.5rem;
+            }
+            #header #navEle a{
+                text-decoration: none;
+                margin-right: 0.3rem;
+            }
+            #header #navEle a:hover{
+                color: red;
+            }
+            #labHead{
+                text-align: center;
+                margin-top: 10rem;
+                margin-bottom: 5rem;
+            }
+            #labHead h1{
+                color: red;
+                font-size: 4rem;
+            }
+            #main{
+                padding: 4rem;
+                border-style: solid;
+                margin: 6%;
+                display: flex;
+                gap: 5rem;
+            }
+            #main #box #flagBox{
+                margin-top: 5rem;
+            }
+            #main #box #flagBox p{
+                color: blue;
+                margin-left: 2rem;
+                margin-top: 2rem;
+                font-size: 0.8rem;
+            }
+            #main #box #flagBox input{
+                font-size: 1.3rem;
+            }
+            #main #box #flagBox #flagSubmit{
+                margin: 0.2rem;
+            }
+            #main #labStart{
+                margin-top: 5rem;
+                margin-left: 15rem;
+            }
+            #main #labStart button{
+                font-size: 2rem;
+                padding-left: 0.7rem;
+                padding-right: 0.7rem;
+                padding-top: 0.3rem;
+                padding-bottom: 0.3rem;
+            }
+            #main #labStart button a{
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div id="mainLogo">
+                <a href="https://hypervare.com"><h2>HyperVare</h2></a>
+            </div>
+            <h3>CTF Labs</h3>
+            <div id="navEle">
+                <a href="https://hypervare.github.io/HVsec/">Home</a>
+                <a href="https://hypervare.com/about">About</a>
+                <a href="https://hypervare.com/contact">Contact</a>
+            </div>
+        </div>
+        <div id="labHead"><h1>JavaScript-Leak</h1></div>
+        <div id="main">
+            <div id="box">
+                <li>Javascript used in website to make them efficient and secure.</li>
+                <div id="flagBox">
+                    <span>Flag:- </span>
+                    <input type="text" id="flag">
+                    <button id="flagSubmit">Submit</button>
+                    <p># Flag-Formate: HVctf{xxxxxxxx}</p>
+                </div>
+            </div>
+            <div id="labStart">
+                <button><a href="#" id="chgBtn">Play</a></button>
+            </div>
+        </div>
+        <script src="fVbX.js"></script>
+    </body>
+</html>
